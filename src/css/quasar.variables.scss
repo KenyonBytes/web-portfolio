@@ -12,14 +12,52 @@
 // to match your app's branding.
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
-$primary   : #1976D2;
-$secondary : #26A69A;
-$accent    : #9C27B0;
+$primary: #2d0291;
+$secondary: #67018c;
+$accent1: #d3b600;
+$accent2: #9d8600;
+$accent3: #584b00;
+$accent-border: #919b00;
 
-$dark      : #1D1D1D;
-$dark-page : #121212;
+$dark: #1d1d1d;
+$dark-page: #121212;
 
-$positive  : #21BA45;
-$negative  : #C10015;
-$info      : #31CCEC;
-$warning   : #F2C037;
+$positive: #21ba45;
+$negative: #c10015;
+$info: #31ccec;
+$warning: #f2c037;
+
+$back-dark: rgb(3 7 18);
+$back-med: rgb(31 41 55);
+$back-light: rgb(55 65 81);
+
+.back-dark {
+  background-color: $back-dark;
+}
+.back-med {
+  background-color: $back-med;
+}
+.back-light {
+  background-color: $back-light;
+}
+.bg-accent1 {
+  background-color: $accent1;
+}
+.bg-accent2 {
+  background-color: $accent2;
+}
+.bg-accent3 {
+  background-color: $accent3;
+}
+.text-accent1 {
+  color: $accent1;
+}
+.text-accent2 {
+  color: $accent2;
+}
+.text-accent3 {
+  color: $accent3;
+}
+.border-accent3 {
+  border-color: $accent3;
+}

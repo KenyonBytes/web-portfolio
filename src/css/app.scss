@@ -1,1 +1,72 @@
-// app global css in SCSS form
+/* Inria serif */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap');
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Paprika */
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span {
+    --at-apply: 'text-gray-950';
+  }
+  h1 {
+    --at-apply: 'font-Poppins !lg:text-6xl !text-3xl !font-extrabold lg:text-red';
+  }
+  h2 {
+    --at-apply: 'font-Inria !text-5xl !font-bold';
+  }
+  h3 {
+    --at-apply: 'font-Paprika !text-5xl my-2';
+  }
+  h4 {
+    --at-apply: 'md:!text-4xl !text-3xl !leading-relaxed font-Paprika';
+  }
+  h6 {
+    --at-apply: 'font-Paprika !font-bold text-[#253D57] leading-8';
+  }
+
+  p {
+    --at-apply: 'font-Poppins text-[0.95rem]';
+  }
+  button {
+    --at-apply: 'font-Poppins';
+  }
+}
+
+@layer utilities {
+  .btn {
+    --at-apply: 'py-3 px-12 border-2 rounded-md rounded-br-3xl font-bold';
+  }
+  .title {
+    --at-apply: '!md:text-3xl !text-2xl';
+  }
+  .subtitle {
+    --at-apply: 'text-gray-300';
+  }
+}
+.swiper-pagination-bullets {
+  justify-items: center;
+}
+.swiper-pagination-bullet {
+  background-color: $accent2 !important;
+  width: 1rem !important;
+  height: 1rem !important;
+  border-radius: 0.5rem;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: $secondary !important;
+  opacity: 1 !important;
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+}
